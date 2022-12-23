@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/screens/pages/web_view.dart';
+import 'package:news_app/src/presentation/screens/pages/web_view.dart';
 
 Widget bulidatrical(artical, context) {
   return InkWell(

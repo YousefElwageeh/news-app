@@ -5,8 +5,8 @@ import 'package:flutter_share/flutter_share.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../resources/app_string.dart';
-import '../resources/assets_manger.dart';
+import '../../../core/utils/app_string.dart';
+import '../../../core/utils/assets_manger.dart';
 
 class SettingsScreen extends StatefulWidget {
   @override

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app/shared/coomon_widget.dart';
-import 'package:news_app/shared/cubit/app_cubit.dart';
-import 'package:news_app/shared/cubit/app_cubit_states.dart';
+import 'package:news_app/src/presentation/screens/widgets/coomon_widget.dart';
+import 'package:news_app/src/presentation/logic/cubit/app_cubit.dart';
+import 'package:news_app/src/presentation/logic/cubit/app_cubit_states.dart';
 
 class searchScreen extends StatelessWidget {
   var searchController = TextEditingController();

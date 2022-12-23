@@ -3,7 +3,7 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 class WebScreen extends StatelessWidget {
   final String url;
-  WebScreen(this.url);
+  const WebScreen(this.url);
   @override
   Widget build(BuildContext context) {
     return Scaffold(

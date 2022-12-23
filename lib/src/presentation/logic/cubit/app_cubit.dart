@@ -1,17 +1,17 @@
 // ignore_for_file: prefer_const_constructors, non_constant_identifier_names
 
-import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app/screens/pages/settings_screen.dart';
+import 'package:news_app/src/core/utils/app_string.dart';
+import 'package:news_app/src/presentation/screens/pages/settings_screen.dart';
 
-import 'package:news_app/shared/cubit/app_cubit_states.dart';
-import 'package:news_app/shared/shared_preferences.dart';
+import 'package:news_app/src/presentation/logic/cubit/app_cubit_states.dart';
+import 'package:news_app/src/core/shared_preferences.dart';
 
 import '../../screens/pages/business_screen.dart';
 import '../../screens/pages/science_screen.dart';
 import '../../screens/pages/sports_screen.dart';
-import '../dio_helper.dart';
+import '../../../core/dio_helper.dart';
 
 class AppCubit extends Cubit<AppStates> {
   AppCubit() : super(AppInit());
@@ -30,22 +30,22 @@ class AppCubit extends Cubit<AppStates> {
         icon: Icon(
           Icons.business,
         ),
-        label: 'Business'),
+        label: AppStrings.business),
     BottomNavigationBarItem(
         icon: Icon(
           Icons.science,
         ),
-        label: 'Science'),
+        label: AppStrings.science),
     BottomNavigationBarItem(
         icon: Icon(
           Icons.sports,
         ),
-        label: 'Sport'),
+        label: AppStrings.sport),
     BottomNavigationBarItem(
         icon: Icon(
           Icons.settings,
         ),
-        label: 'settings'),
+        label: AppStrings.settings),
   ];
   void bottom_navigator(int index) {
     indexOfScreen = index;
